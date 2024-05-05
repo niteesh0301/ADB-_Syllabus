@@ -1,0 +1,19 @@
+{% include 'commonHead.html' %}
+<br><br>
+<div class="container-fluid mt-3">
+  <div class="row">
+    <div class="col-md-4 mt-4">
+        <div class="card p-3">
+            <form action="editCategoryAction" method="post">
+        <input type="hidden" name="categoryId" value="{{categoryId}}">
+            <div class="form-group mt-1">
+                <label>Category Name</label>
+                <input type="text" name="category_name" value="{{category['category_name']}}"  class="form-control mt-1" required>
+                <input type="submit" value="Edit Category" class="btn btn-primary w-100 mt-2">
+            </div>
+        </form>
+        </div>
+
+    </div>
+  </div>
+</div>

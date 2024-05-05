@@ -1,0 +1,27 @@
+{% include 'commonHead.html' %}
+<br><br>
+<div class="container mt-4">
+    <div class="text-center h5">Auction Categories</div>
+    <div class="row">
+        <div class="col-md-4 mt-2">
+            <div class="card p-4">
+                <form action="addCategoryAction">
+                    <div class="form-group mt-1">
+                        <label>Category Name</label>
+                        <input type="text" name="category_name" placeholder="Category" class="form-control mt-1" required>
+                        <input type="submit" value="Add Category" class="btn btn-primary w-100 mt-2">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-8 mt-2">
+            <div class="card p-3 mt-2">
+                <ul>
+                    {% for category in categories %}
+                      <li class="h6">{{category['category_name']}} <a href="editCategory?categoryId={{category['_id']}}"> Edit</a> </li>
+                    {% endfor%}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

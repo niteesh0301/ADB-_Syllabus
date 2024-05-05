@@ -1,0 +1,217 @@
+{% if session['role'] == 'admin'%}
+<!-- === Coding by CodingLab | www.codinglabweb.com === -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+<link rel="stylesheet" type="text/css" href="../static/style.css" />
+    <title>Online Auction</title>
+</head>
+<head>
+  <title>Bootstrap 5 Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-bar">
+            <i class='bx bx-menu sidebarOpen' ></i>
+            <span class="logo navLogo"><a href="/admin_home">Online Auction</a></span>
+
+            <div class="menu">
+                <div class="logo-toggle">
+                    <span class="logo"><a href="/admin_home">Online Auction</a></span>
+                    <i class='bx bx-x siderbarClose'></i>
+                </div>
+
+                <ul class="nav-links">
+                    <li class="mt-3 nav-link"><a href="/categories">Categories</a></li>
+                    <li class="mt-3 nav-link"><a href="/traders">Traders</a></li>
+                    <li class="mt-3 nav-link"><a href="/products">Products</a></li>
+                    <li class="mt-3 nav-link"><a href="/products_sessions">Sessions</a></li>
+                    <li class="mt-3 nav-link"><a href="/auctions">Auction Biddings</a></li>
+
+                    <li class="mt-3 nav-link"><a href="/logout">Logout</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <script src="../static/script.js"></script>
+<a href="../static/style.css"></a>
+</body>
+</html>
+{% elif session['role'] == 'buyer'%}
+<!-- === Coding by CodingLab | www.codinglabweb.com === -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+<link rel="stylesheet" type="text/css" href="../static/style.css" />
+    <title>Online Auction</title>
+</head>
+<head>
+  <title>Bootstrap 5 Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-bar">
+            <i class='bx bx-menu sidebarOpen' ></i>
+            <span class="logo navLogo"><a href="/buyerHome">Online Auction</a></span>
+
+            <div class="menu">
+                <div class="logo-toggle">
+                    <span class="logo"><a href="/buyerHome">Online Auction</a></span>
+                    <i class='bx bx-x siderbarClose'></i>
+                </div>
+
+                <ul class="nav-links">
+                    <li class="mt-3 nav-link"><a href="/buyerHome">Home</a></li>
+                    <li class="mt-3 nav-link"><a href="/searchProducts">Search Products</a></li>
+                    <li class="mt-3 nav-link"><a href="/auctions">Auctions</a></li>
+                    <li class="mt-3 nav-link"><a href="/suspendedBiddings">Suspend</a></li>
+                    <li class="mt-3 nav-link"><a href="/logout">Logout</a></li>
+                </ul>
+            </div>
+
+            <div class="darkLight-searchBox">
+
+
+                <div class="searchBox">
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <script src="../static/script.js"></script>
+<a href="../static/style.css"></a>
+</body>
+</html>
+{% elif session['role'] == 'trader'%}
+<!-- === Coding by CodingLab | www.codinglabweb.com === -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+<link rel="stylesheet" type="text/css" href="../static/style.css" />
+    <title>Online Auction</title>
+</head>
+<head>
+  <title>Bootstrap 5 Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-bar">
+            <i class='bx bx-menu sidebarOpen' ></i>
+            <span class="logo navLogo"><a href="/traderHome">Online Auction</a></span>
+
+            <div class="menu">
+                <div class="logo-toggle">
+                    <span class="logo"><a href="/traderHome">Online Auction</a></span>
+                    <i class='bx bx-x siderbarClose'></i>
+                </div>
+
+                <ul class="nav-links">
+                    <li class="mt-3 nav-link"><a href="/traderHome">Home</a></li>
+                    <li class="mt-3 nav-link"><a href="/products">Products</a></li>
+                    <li class="mt-3 nav-link"><a href="/auctions">Auctions</a></li>
+                    <li class="mt-3 nav-link"><a href="/suspendedBiddings">Suspend Biddings</a></li>
+                    <li class="mt-3 nav-link"><a href="/logout">Logout</a></li>
+                </ul>
+            </div>
+
+            <div class="darkLight-searchBox">
+
+            </div>
+        </div>
+    </nav>
+
+    <script src="../static/script.js"></script>
+<a href="../static/style.css"></a>
+</body>
+</html>
+{% else%}
+<!-- === Coding by CodingLab | www.codinglabweb.com === -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+<link rel="stylesheet" type="text/css" href="../static/style.css" />
+    <title>Online Auction</title>
+</head>
+<head>
+  <title>Bootstrap 5 Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-bar">
+            <i class='bx bx-menu sidebarOpen' ></i>
+            <span class="logo navLogo"><a href="/">Online Auction</a></span>
+
+            <div class="menu">
+                <div class="logo-toggle">
+                    <span class="logo"><a href="#">Online Auction</a></span>
+                    <i class='bx bx-x siderbarClose'></i>
+                </div>
+
+                <ul class="nav-links">
+                    <li class="mt-3 nav-link"><a href="/">Home</a></li>
+                    <li class="mt-3 nav-link"><a href="/adminLogin">Admin</a></li>
+                    <li class="mt-3 nav-link"><a href="/traderLogin">Trader</a></li>
+                    <li class="mt-3 nav-link"><a href="/buyerLogin">Buyer</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <script src="../static/script.js"></script>
+<a href="../static/style.css"></a>
+</body>
+</html>
+{% endif%}
+<!DOCTYPE html>
